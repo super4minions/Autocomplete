@@ -1,4 +1,4 @@
-// Get the <datalist> and <input> elements.
+function r() {
 var dataList = document.getElementById('json-datalist');
 var input = document.getElementById('ajax');
 
@@ -10,19 +10,16 @@ request.onreadystatechange = function(response) {
   if (request.readyState === 4) {
     if (request.status === 200) {
       // Parse the JSON
-      var jsonOptions = JSON.parse(request.responseText);
+      var jsonOptions =JSON.parse(request.responseText);
+console.log(Object.keys(jsonOptions)[0])
 
-      // Loop over the JSON array.
-      jsonOptions.forEach(function(item) {
         // Create a new <option> element.
         var option = document.createElement('option');
         // Set the value using the item in the JSON array.
-        option.value = item;
+        option.value = Object.keys(jsonOptions)[0];
         // Add the <option> element to the <datalist>.
         dataList.appendChild(option);
-      });
-
-      // Update the placeholder text.
+      ;
       input.placeholder = "e.g. datalist";
     } else {
       // An error occured :(
@@ -35,5 +32,8 @@ request.onreadystatechange = function(response) {
 input.placeholder = "Loading options...";
 
 // Set up and make the request.
-request.open('POST', '/hi', true);
-request.send();
+
+request.open('POST', 'http://localhost:8080/getdata', true);
+request.send(input.value);
+
+}
