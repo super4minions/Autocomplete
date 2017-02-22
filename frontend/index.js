@@ -11,9 +11,8 @@ function r() {
         }
         if (request.readyState === 4) {
             if (request.status === 200) {
-                // Parse the JSON
                 jsonOptions = JSON.parse(request.responseText);
-                array = jsonOptions.slice(0, 5);
+                array = jsonOptions;
                 // console.log(array)
                 array.forEach(function(item) {
                     option = document.createElement('option');
