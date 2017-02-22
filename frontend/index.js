@@ -25,6 +25,6 @@ function r() {
             }
         }
     };
-    request.open('POST', 'http://localhost:8080/getdata', true);
+    request.open('POST', 'https://mohanaji-search.herokuapp.com/getdata', true);
     request.send(input.value);
 }
