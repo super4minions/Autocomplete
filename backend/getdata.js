@@ -1,6 +1,6 @@
 var utils = require('./utils.js');
 var fs = require('fs');
-var words = fs.readFileSync('../words.txt', 'utf8');
+var words = fs.readFileSync('./words.txt', 'utf8');
 words = words.match(/[^\r\n]+/g);
 var array = [];
 module.exports = function(req, res) {
