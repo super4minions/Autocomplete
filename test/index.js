@@ -3,7 +3,6 @@ var test = require('tape');
 var IndexFrontEnd = require('../frontend/index2.js');
 var JsFrontEd = require('../frontend/js.js');
 var CssFrontEd = require('../frontend/css.js');
-// var GetData = require('../backend/getdata.js');
 test('GET /: should return datalist html', function(t) {
     shot.inject(IndexFrontEnd, { method: 'GET', url: '/' }, function(res) {
         var indexOf = res.payload.indexOf('datalist');
@@ -28,12 +27,3 @@ test('GET /: should return css file', function(t) {
         t.end();
     });
 });
-// test('POST /: should return array ', function(t) {
-//     shot.inject(GetData, { method: 'GET', url: '/' }, function(res) {
-//         console.log(res.payload)
-//         var indexOf = res.payload.indexOf('label');
-//         t.notEqual(indexOf, -1, 'got label css somewhere in the css file');
-//         t.equal(res.statusCode, 200, 'style css file is exist');
-//         t.end();
-//     });
-// });
