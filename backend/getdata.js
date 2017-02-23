@@ -1,9 +1,6 @@
 var utils = require('./utils.js');
-var fs = require('fs');
-var words = fs.readFileSync('./words.txt', 'utf8');
-words = words.match(/[^\r\n]+/g);
 var array = [];
-module.exports = function(req, res) {
+module.exports = function(req, res,words) {
     utils.parseBody(req, function(err, body) {
         array = words.filter(isEqual(body))
         array.sort(function(a, b) {
