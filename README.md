@@ -6,7 +6,8 @@ A website widget that enables users to quickly find and select words from a list
 
 [![Build Status](https://travis-ci.org/super4minions/Autocomplete.svg?branch=master)](https://travis-ci.org/super4minions/Autocomplete)
 
-[Heroku link](https://mohanaji-search.herokuapp.com/)
+[Heroku link](https://superminionsearch.herokuapp.com/)
+
 ## About NodeJS
 ![alt text](http://ericsowell.com/content/post-images/nodejsdoesalotforyou.png)
 
@@ -26,3 +27,6 @@ As a user of the search widget on the website.
 > I want a search widget to help detect and correct spelling errors.
 
 > I want to have a great and seamless search experience on the website.
+
+### Concept
+![alt text](http://imgh.us/Sk01.jpeg)
