@@ -29,4 +29,4 @@ As a user of the search widget on the website.
 > I want to have a great and seamless search experience on the website.
 
 ### Concept
-![alt text](http://imgh.us/Sk01.jpeg)
+![alt text](http://imgh.us/Sk01_1.jpeg)
