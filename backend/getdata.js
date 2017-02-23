@@ -1,6 +1,6 @@
 var utils = require('./utils.js');
 var array = [];
-module.exports = function(req, res,words) {
+module.exports = function(req, res, words) {
     utils.parseBody(req, function(err, body) {
         array = words.filter(isEqual(body))
         array.sort(function(a, b) {
