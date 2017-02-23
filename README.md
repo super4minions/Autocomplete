@@ -4,10 +4,9 @@
 
 A website widget that enables users to quickly find and select words from a list of suggestions, as they type.
 
-[Heroku link](https://mohanaji-search.herokuapp.com/)
-
 [![Build Status](https://travis-ci.org/super4minions/Autocomplete.svg?branch=master)](https://travis-ci.org/super4minions/Autocomplete)
 
+[Heroku link](https://mohanaji-search.herokuapp.com/)
 ## About NodeJS
 ![alt text](http://ericsowell.com/content/post-images/nodejsdoesalotforyou.png)
 
