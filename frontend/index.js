@@ -33,7 +33,7 @@ console.log("Call to doSomething took " + (t1 - t0)/1000 + " milliseconds.")
             }
         }
     };
-    request.open('POST', 'http://localhost:8080/getdata', true);
+    request.open('POST', 'https://superminionsearch.herokuapp.com/getdata', true);
     request.send(input.value);
 }
  
