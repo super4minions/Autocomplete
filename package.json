@@ -1,0 +1,28 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "A website that enables users to quickly find and select words from a list of suggestions, as they type.",
+  "main": "server.js",
+  "dependencies": {
+    "shot": "^3.4.0",
+    "tap": "^10.2.0",
+    "tape": "^4.6.3"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/super4minions/Autocomplete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/super4minions/Autocomplete/issues"
+  },
+  "homepage": "https://github.com/super4minions/Autocomplete#readme"
+}
