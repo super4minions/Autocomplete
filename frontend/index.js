@@ -28,6 +28,6 @@ function r() {
             }
         }
     };
-    request.open('POST', 'https://superminionsearch.herokuapp.com/getdata', true);
+    request.open('POST', 'http://localhost:8080/getdata', true);
     request.send(input.value);
 }

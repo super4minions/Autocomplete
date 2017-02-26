@@ -3,6 +3,10 @@ var test = require('tape');
 var IndexFrontEnd = require('../frontend/index2.js');
 var JsFrontEd = require('../frontend/js.js');
 var CssFrontEd = require('../frontend/css.js');
+var GetData = require('../backend/getdata.js');
+var fs = require('fs');
+var words = fs.readFileSync('./words.txt', 'utf8');
+words = words.match(/[^\r\n]+/g);
 test('GET /: should return datalist html', function(t) {
     shot.inject(IndexFrontEnd, { method: 'GET', url: '/' }, function(res) {
         var indexOf = res.payload.indexOf('datalist');
@@ -26,4 +30,4 @@ test('GET /: should return css file', function(t) {
         t.equal(res.statusCode, 200, 'style css file is exist');
         t.end();
     });
-});
+}); 
