@@ -7,6 +7,7 @@ var GetData = require('../backend/getdata.js');
 var fs = require('fs');
 var words = fs.readFileSync('./words.txt', 'utf8');
 words = words.match(/[^\r\n]+/g);
+
 test('GET /: should return datalist html', function(t) {
     shot.inject(IndexFrontEnd, { method: 'GET', url: '/' }, function(res) {
         var indexOf = res.payload.indexOf('datalist');
