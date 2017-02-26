@@ -13,7 +13,10 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node ./test/index.js"
+    "test": "node ./test/index.js",
+    "cov": "npm run coverage && npm run cov:open",
+    "coverage": "./node_modules/.bin/istanbul cover ./test/runner.js",
+    "cov:open": "open ./coverage/lcov-report/index.html"
   },
   "repository": {
     "type": "git",
