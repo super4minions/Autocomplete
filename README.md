@@ -1,6 +1,3 @@
-[![Code Climate](https://codeclimate.com/repos/58b2bc7215dca70266002927/badges/eeba2e41ff02e6ad8b63/gpa.svg)](https://codeclimate.com/repos/58b2bc7215dca70266002927/feed)
-
-[![Test Coverage](https://codeclimate.com/repos/58b2bc7215dca70266002927/badges/eeba2e41ff02e6ad8b63/coverage.svg)](https://codeclimate.com/repos/58b2bc7215dca70266002927/coverage)
 
 ![alt text](https://camo.githubusercontent.com/257c0cbc35a9d1e8d9ae673264876260ee8bac69/68747470733a2f2f73382e706f7374696d672e6f72672f776f6a65616c636e702f6c6f676f312e6a7067)
 
@@ -8,7 +5,8 @@
 
 A website widget that enables users to quickly find and select words from a list of suggestions, as they type.
 
-[![Build Status](https://travis-ci.org/super4minions/Autocomplete.svg?branch=master)](https://travis-ci.org/super4minions/Autocomplete)
+[![Build Status](https://travis-ci.org/super4minions/Autocomplete.svg?branch=master)](https://travis-ci.org/super4minions/Autocomplete) [![Code Climate](https://codeclimate.com/repos/58b2bc7215dca70266002927/badges/eeba2e41ff02e6ad8b63/gpa.svg)](https://codeclimate.com/repos/58b2bc7215dca70266002927/feed) [![Test Coverage](https://codeclimate.com/repos/58b2bc7215dca70266002927/badges/eeba2e41ff02e6ad8b63/coverage.svg)](https://codeclimate.com/repos/58b2bc7215dca70266002927/coverage)
+
 
 [Heroku link](https://superminionsearch.herokuapp.com/)
 
